@@ -1,15 +1,15 @@
 <?php
-
 function conectarDB() {
     $db = mysqli_connect(
-        'mysql.railway.internal', // Host
-        'root',                   // Usuario
-        'jGuLRRKWWyhBHBAyliJzPgdkjIxgtLbr', // Contraseña
-        'railway'                 // Nombre de la base de datos
+        'mainline.proxy.rlwy.net',
+        'root',
+        'jGuLRRKWWyhBHBAyliJzPgdkjIxgtLbr',
+        'railway',
+        12907
     );
 
     if (!$db) {
-        echo "Error en la conexión a la base de datos";
+        echo "Error en la conexión";
         exit;
     }
 
