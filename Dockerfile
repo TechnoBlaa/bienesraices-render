@@ -1,6 +1,6 @@
 
 FROM php:8.2-apache
 
-COPY bienesraices/ /var/www/html/
+COPY bienesraices/. /var/www/html/
 
 RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
