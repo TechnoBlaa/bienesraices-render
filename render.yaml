@@ -1,0 +1,12 @@
+
+services:
+  - type: web
+    name: bienesraices
+    env: docker
+    plan: free
+    autoDeploy: true
+
+databases:
+  - name: bienesraices_db
+    databaseName: bienesraices
+    user: admin
